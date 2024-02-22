@@ -1,0 +1,36 @@
+﻿@model IEnumerable<WebApplication1.Models.Book>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-9">
+        <h2 class="text-primary text-center">Book List</h2>
+    </div>
+    <table id="tblData" class="table table-active table-bordered table-hover table-stripped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>ISBN</th>
+                <th>Author</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        @*<tbody>
+            @foreach(var book in Model )
+            {
+                <tr>
+                    <td>@book.Name</td>
+                    <td>@book.ISBN</td>
+                    <td>@book.Author</td>
+                    <td>@book.Description</td>
+                    <td>@book.Price</td>
+                </tr>
+            }
+        </tbody>*@
+    </table>
+</div>
+@section Scripts{
+    <script src="~/js/book.js"></script>
+}
